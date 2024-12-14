@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 600px;
+            width: 600px;
+            background-color: darkseagreen;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;  /* yah row me content ko center me krega yh left right laam krta hai */
+            align-items: center;      /* yah column me content ko center me krega means yh top bottum kaam krta hai*/
+        }
+        .a{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            
+           
+        }
+        #first{
+            background-color: green;
+        }
+        #second{
+            background-color: indianred;
+        }
+        #third{
+            background-color: blueviolet;
+        }
+        #fourth{
+            background-color: yellowgreen;
+        }
+        #container1{
+            height: 600px;
+            width: 600px;
+            background-color: darkseagreen;
+            border: 2px solid black;
+        }
+        .b{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;  /* yah row me content ko center me krega yh left right laam krta hai */
+            align-items: center;      /* yah column me content ko center me krega means yh top bottum kaam krta hai*/
+            /* jb yhi same hmnecontainer ki jgh class me lgaya to vh text pr kaam kr rha hai text ko mid me rkh rha hai shap ki according jada smjhne ke liye inspect kr kr dekh remove and apply align-items and justify-content */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+         <div id="first" class="a">1</div>
+         <div id="second"  class="a">2</div>
+         <div id="third"  class="a">3</div>
+         <div id="fourth"  class="a">4</div>
+    </div>
+    <div id="container1">
+        <div id="first" class="b">1</div>
+        <div id="second"  class="b">2</div>
+        <div id="third"  class="b">3</div>
+        <div id="fourth"  class="b">4</div>
+   </div>
+</body>
+</html>

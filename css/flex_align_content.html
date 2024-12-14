@@ -1,0 +1,94 @@
+
+<!-- output is showing the difference between align-items and align-content -->
+ <!-- align content ka use tb hi kr skte hai jb flex wrap nowrab ki jgh kuchh aur ho aur normally jb hm flex-wrapka use nhi krte hai to vo nowrep hi hota hai to tb hm align-contentka use nhi kr skte align-itemska kr skte hai  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            margin: 10px;
+            height: 600px;
+            width: 600px;
+            background-color: rgb(110, 139, 138);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+
+        }
+        .a{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+        #container1{
+            margin: 10px;
+            height: 600px;
+            width: 600px;
+            background-color: rgb(72, 116, 177);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            border: 2px solid black;
+        }
+        #first{
+            background-color: brown;
+        }
+        #second{
+            background-color: rgb(245, 237, 0);
+        }
+        #third{
+            background-color: maroon;
+        }
+        #fourth{
+            background-color: navy;
+        }
+        #fifth{
+            background-color: indigo;
+        }
+        #sixth{
+            background-color: lightcoral;
+        }
+        #seventh{
+            background-color: limegreen;
+        }
+        #eighth{
+            background-color: teal;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="first" class="a">1</div>
+        <div id="second"class="a">2</div>
+        <div id="third"class="a">3</div>
+        <div id="fourth"class="a">4</div>
+        <div id="fifth" class="a">5</div>
+        <div id="sixth"class="a">6</div>
+        <div id="seventh"class="a">7</div>
+        <div id="eighth"class="a">8</div>
+       
+    </div>
+    <div id="container1">
+        <div id="first" class="a">1</div>
+        <div id="second"class="a">2</div>
+        <div id="third"class="a">3</div>
+        <div id="fourth"class="a">4</div>
+        <div id="fifth" class="a">5</div>
+        <div id="sixth"class="a">6</div>
+        <div id="seventh"class="a">7</div>
+        <div id="eighth"class="a">8</div>
+    </div>
+</body>
+</html>

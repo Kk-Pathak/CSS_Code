@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #container{
+            height: 600px;
+            width: 600px;
+            background-color: darkseagreen;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            align-items: center;
+         }
+        .a{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+        #first{
+            background-color: green;
+        }
+        #second{
+            background-color: indianred;
+            flex-shrink: 5;
+            /* flex-shrink 5 ka means hai tive time more shrink then others aur agr 0 likh dete to phir 2 box shrink nhi hota aur .5 krne se jitna sb shrink hote uska half shrink hota
+             */
+        }
+        #third{
+            background-color: blueviolet;
+        }
+        #fourth{
+            background-color: yellowgreen;
+        }
+        #fifth{
+            background-color: indigo;
+        }
+        #sixth{
+            background-color: lightcoral;
+        }
+        #seventh{
+            background-color: limegreen;
+        }
+        #eighth{
+            background-color: teal;
+        }
+         
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="first" class="a">1</div>
+        <div id="second"  class="a">2</div>
+        <div id="third"  class="a">3</div>
+        <div id="fourth"  class="a">4</div>
+        <div id="fifth" class="a">5</div>
+        <div id="sixth"class="a">6</div>
+        <div id="seventh"class="a">7</div>
+        <div id="eighth"class="a">8</div>
+   </div>
+</body>
+</html>

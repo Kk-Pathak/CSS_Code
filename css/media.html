@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: darkred;
+            border: 2px solid black;
+        }
+       @media screen and (width:200px) {
+                                        #first{
+                                            height: 200px;
+                                            width: 200px;
+                                            margin: 100px;
+                                        }
+        
+       }
+       @media  screen and (min-width:200px) {
+                                            #second{
+                                                background-color: darkblue;
+                                            }
+        
+       }
+       @media screen and (max-width:300px) {
+                                            #third{
+                                                height: 50px;
+                                                width: 50px;
+                                            }
+        
+       }
+       @media  screen and (min-width:200px) and (max-width:300px) {
+                                                                #fourth{
+                                                                    border-radius: 50%;
+                                                                }
+        
+       }
+    </style>
+</head>
+<body>
+    <div id="first" class="a">box</div>
+    <div id="second"class="a">box</div>
+    <div id="third"class="a">box</div>
+    <div id="fourth"class="a">box</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            background-color: teal;
+        }
+        #box1{
+           display: block;
+            /*  isme poori width le leta hai */
+        }
+
+        #box2{
+            display: inline;
+            /* isme jitna figure hota hai utni hai jgh leta hai pr hm uska size nhi set kr skte */
+        }
+
+        #box3{
+            display: inline-block;
+            /* isme space bhi utni hi leta hai gtni mation kiya ho aur high(size) bhi hm adjuest kr skte hai   */
+        }
+        #box4{
+            /* visibility: hide;   ka use krte hai to vs hide to ho jata hai pr space liye rhta hai lekin displar none krne se vh hide bhi ho jara hai aur space bhi nhi leta
+            */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+    <div id="box4" class="box">box4</div>
+    <div id="box5" class="box">box5</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            background-color: lightskyblue;
+           
+            animation-name: ghumana;
+            animation-duration: 5s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+           
+
+        }
+        @keyframes ghumana {
+           from{left: 10px;}
+           to{left: 400px;}
+        }
+
+           /* we can also define 
+           @keyframes ghumana {
+          0%{left:10px;}
+          50% {left:200px;}
+          100%{left:400px}
+             }
+           */
+
+        
+    </style>
+</head>
+<body>
+    <div id="first" class="a">animation</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            margin: 100px;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            transition: all 1s ease-in-out 1s;
+        }
+        #first{
+                background-color: dimgray;
+               
+        }
+        #first:hover{
+                
+                transform: rotate(45deg);
+        }
+        #second{
+                background-color: forestgreen;
+               
+        }
+        #second:hover{
+                background-color: forestgreen;
+                transform: scale(2);
+        }
+        #third{
+                 background-color: darkturquoise;
+                 }
+        #third:hover{
+                
+                 transform:translate(100px, 100px) ;
+        }
+        #fourth{
+                background-color: hotpink;
+                }
+        #fourth:hover{
+              
+                transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="a">rotate</div>
+    <div id="second" class="a">scale</div>
+    <div id="third" class="a">skew</div>
+    <div id="fourth" class="a">translate</div>
+</body>
+</html>

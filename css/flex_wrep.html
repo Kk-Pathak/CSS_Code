@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          h1{
+            text-align: center;
+        }
+         .box{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            text-align: center;
+
+        }
+        #container1{
+            height: 600px;
+            width: 400px;
+            background-color: lightcyan;
+            display: flex;
+            flex-direction: row;
+            
+            border: 2px solid black;
+            flex-wrap: nowrap;
+        }
+        #container2{
+            height: 600px;
+            width: 400px;
+            background-color: lightcyan;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            flex-wrap: wrap;
+        }
+        #container3{
+            height: 600px;
+            width: 400px;
+            background-color: lightcyan;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            flex-wrap: wrap-reverse;
+        }
+        #first{
+            background-color: brown;
+        }
+        #second{
+            background-color: rgb(245, 237, 0);
+        }
+        #third{
+            background-color: maroon;
+        }
+        #fourth{
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex=row // nowrap(default)</h1>
+    <div id="container1">
+        <div id="first" class="box">1</div>
+        <div id="second" class="box">2</div>
+        <div id="third" class="box">3</div>
+        <div id="fourth" class="box">4</div>
+    </div>
+    <h1>flex=row//wrap</h1>
+    <div id="container2">
+        <div id="first" class="box">1</div>
+        <div id="second" class="box">2</div>
+        <div id="third" class="box">3</div>
+        <div id="fourth" class="box">4</div>
+    </div>
+    <h1>flex=row//wrap-reverse</h1>
+    <div id="container3">
+        <div id="first" class="box">1</div>
+        <div id="second" class="box">2</div>
+        <div id="third" class="box">3</div>
+        <div id="fourth" class="box">4</div>
+    </div>
+</body>
+</html>

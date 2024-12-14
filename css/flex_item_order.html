@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #container{
+            height: 600px;
+            width: 600px;
+            background-color: darkseagreen;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center;
+         }
+        .a{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+        #first{
+            background-color: green;
+            order: 3;
+        }
+        #second{
+            background-color: indianred;
+            order: 6;
+         }
+        #third{
+            background-color: blueviolet;
+            order: 2;
+        }
+        #fourth{
+            background-color: yellowgreen;
+            order: 8;
+        }
+        #fifth{
+            background-color: indigo;
+            order: 4;
+        }
+        #sixth{
+            background-color: lightcoral;
+            order: 1;
+        }
+        #seventh{
+            background-color: limegreen;
+            order: 3;
+        }
+        #eighth{
+            background-color: teal;
+            order:5;
+        }
+        /* box me hm jo order lekhege output me bhi vh us order me aayega  */
+         
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="first" class="a">1</div>
+        <div id="second"  class="a">2</div>
+        <div id="third"  class="a">3</div>
+        <div id="fourth"  class="a">4</div>
+        <div id="fifth" class="a">5</div>
+        <div id="sixth"class="a">6</div>
+        <div id="seventh"class="a">7</div>
+        <div id="eighth"class="a">8</div>
+   </div>
+</body>
+</html>
